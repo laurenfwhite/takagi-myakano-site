@@ -1,10 +1,9 @@
 /* Meta Pixel for the bridge pages.
-   1. Paste your Pixel ID between the quotes below. Until then nothing loads.
-   2. Each page fires PageView + ViewContent on load, and a custom
+   Pixel ID is set below. Each page fires PageView + ViewContent on load, and a custom
       "AmazonClick" event when the visitor taps the Amazon button.
       In Events Manager you can turn AmazonClick into a custom conversion. */
 (function () {
-  var META_PIXEL_ID = ''; // e.g. '123456789012345'
+  var META_PIXEL_ID = '2536847540116822';
 
   var tag = document.currentScript;
   var book = (tag && tag.getAttribute('data-book')) || document.title;
