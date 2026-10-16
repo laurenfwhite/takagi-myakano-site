@@ -1,31 +1,510 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The 21 Principles of Dokkodo — Takagi Myakano</title>
-<!-- Hidden page: reached only from Meta ads. Keep it out of search results. -->
-<meta name="robots" content="noindex, nofollow">
-<link rel="stylesheet" href="../assets/bridge.css">
-<script src="../assets/pixel.js" data-book="The 21 Principles of Dokkodo"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== SEO: the point of this site is to rank for the author's name ===== -->
+<title>Takagi Myakano — Japanese Philosophy for Inner Peace</title>
+<meta name="description" content="Takagi Myakano is the author behind Japanese Philosophy for Inner Peace: short, practical books on ikigai, wabi-sabi, kintsugi and kaizen.">
+<!-- Add once the real domain is live:
+<link rel="canonical" href="https://YOUR-DOMAIN.com/" />
+<meta property="og:url" content="https://YOUR-DOMAIN.com/" />
+<meta property="og:image" content="https://YOUR-DOMAIN.com/ikigai-en.jpg" />
+-->
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Takagi Myakano — Japanese Philosophy for Inner Peace">
+<meta property="og:description" content="Ancient Japanese wisdom, made practical for modern life.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-01.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-02.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-03.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-04.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-05.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-06.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-07.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-08.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-09.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-10.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-11.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-12.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-13.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-14.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("font-08.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("font-09.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("font-10.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("font-11.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("font-12.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("font-13.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("font-14.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-15.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("font-16.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("font-15.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("font-16.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+
+<style>
+  :root {
+    --bg: #FBF8F3;
+    --ink: #1E1C19;
+    --ink-2: #2A2723;
+    --body: #4E4842;
+    --muted: #7A7166;
+    --label: #9A9186;
+    --rule: #E7DFD2;
+    --chip: #E2D9CA;
+    --accent: #B4522A;
+    --accent-dark: #8E3F1F;
+    --serif: 'EB Garamond', Georgia, serif;
+    --sans: Karla, system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: #EADFCF; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { color: var(--accent-dark); }
+  img { max-width: 100%; }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding-inline: 40px; }
+  .wrap--wide { max-width: 1200px; }
+  .rule { height: 1px; background: var(--rule); }
+  .label {
+    font-family: var(--sans); font-weight: 500; font-size: 12px; letter-spacing: 0.24em;
+    text-transform: uppercase; color: var(--label); margin: 0; max-width: none;
+  }
+
+  .btn {
+    display: inline-flex; align-items: center;
+    padding: 17px 30px; border-radius: 2px;
+    background: var(--accent); color: var(--bg);
+    font-size: 13px; letter-spacing: 0.09em; text-transform: uppercase;
+  }
+  .btn:hover { background: var(--accent-dark); color: var(--bg); }
+
+  /* Hero */
+  .hero {
+    padding-block: 160px 128px;
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; gap: 36px;
+  }
+  .hero h1 {
+    font-family: var(--serif); font-weight: 400; font-size: 80px;
+    line-height: 1.02; letter-spacing: 0.01em; margin: 0;
+  }
+  .hero p:not(.label) {
+    font-family: var(--serif); font-size: 25px; line-height: 1.5;
+    color: var(--body); margin: 0; max-width: 28ch; text-wrap: pretty;
+  }
+  .hero .btn { margin-top: 8px; }
+
+  /* Two-column prose sections */
+  .prose {
+    padding-block: 104px 116px;
+    display: grid; grid-template-columns: 220px 1fr; gap: 60px; align-items: start;
+  }
+  h2.label { font-size: 17px; letter-spacing: 0.2em; color: var(--muted); }
+  .prose .label { margin-top: 10px; }
+  .prose-body { display: flex; flex-direction: column; gap: 26px; max-width: 60ch; }
+  .prose-body .prose-lead {
+    font-family: var(--serif); font-size: 28px; line-height: 1.5;
+    color: var(--ink-2); margin: 0; text-wrap: pretty;
+  }
+  .prose-body p { font-size: 17px; line-height: 1.82; color: var(--body); margin: 0; text-wrap: pretty; }
+
+  /* Books */
+  .books { padding-block: 104px 40px; }
+  .books > .label { margin-bottom: 60px; text-align: center; }
+  .book-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 48px; align-items: start; }
+  .book { display: flex; flex-direction: column; gap: 22px; }
+  .book-cover {
+    display: flex; align-items: flex-end; aspect-ratio: 0.625;
+    box-shadow: 0 1px 2px rgba(30,28,25,0.10), 0 14px 32px -18px rgba(30,28,25,0.35);
+    transition: box-shadow 180ms ease;
+  }
+  .book-cover:hover { box-shadow: 0 1px 2px rgba(30,28,25,0.14), 0 20px 40px -18px rgba(30,28,25,0.42); }
+  .book-cover img { display: block; width: 100%; height: 100%; object-fit: contain; }
+  .book-meta { display: flex; flex-direction: column; gap: 12px; }
+  .book h3 {
+    font-family: var(--serif); font-weight: 400; font-size: 27px;
+    letter-spacing: 0.03em; margin: 0;
+  }
+  .book p { font-size: 15px; line-height: 1.65; color: var(--body); margin: 0; text-wrap: pretty; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; list-style: none; padding: 0; }
+  .chips li {
+    font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    color: #6E6559; border: 1px solid var(--chip); border-radius: 2px; padding: 4px 7px;
+  }
+  .book p.rating { font-size: 13px; line-height: 1.6; color: var(--muted); margin-top: 2px; }
+  .book p.bestseller {
+    font-size: 11px; letter-spacing: 0.09em; text-transform: uppercase;
+    color: var(--accent); margin-top: 2px;
+  }
+  .series-note { font-size: 13px; line-height: 1.7; color: var(--muted); margin: 40px 0 0; text-align: center; }
+
+  /* Sales line */
+  .proof { padding-top: 104px; }
+  .proof-inner { border-top: 1px solid var(--rule); padding-top: 56px; text-align: center; }
+  .proof p {
+    font-family: var(--serif); font-size: 24px; line-height: 1.6;
+    color: var(--ink-2); margin: 0 auto; max-width: 34ch; text-wrap: pretty;
+  }
+
+  footer { padding-block: 108px 128px; display: flex; justify-content: center; }
+
+
+  @media (max-width: 900px) {
+    .wrap { padding-inline: 28px; }
+    .hero { padding-block: 104px 88px; }
+    .hero h1 { font-size: 56px; }
+    .hero p:not(.label) { font-size: 21px; }
+    .prose { grid-template-columns: 1fr; gap: 24px; padding-block: 72px 80px; }
+    .prose .label { margin-top: 0; }
+    .prose-body .prose-lead { font-size: 23px; }
+    h2.label { font-size: 15px; }
+    .books { padding-block: 72px 32px; }
+    .book-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 32px; }
+    .proof { padding-top: 72px; }
+    .proof p { font-size: 21px; }
+    footer { padding-block: 72px 96px; }
+  }
+  @media (max-width: 520px) {
+    .hero h1 { font-size: 44px; }
+    .book-grid { grid-template-columns: 1fr; gap: 48px; }
+    .book-cover { max-width: 260px; }
+  }
+</style>
 </head>
 <body>
-<main class="bridge">
-  <p class="brand">From Takagi’s Book List</p>
-  <div class="titles">
-    <h1>The 21 Principles of Dokkodo</h1>
-    <p class="sub">Miyamoto Musashi’s Guide to the Way of Walking Alone and Mastering Self-Discipline</p>
-    <p class="by">Paperback · Motiversity Quotes</p>
+
+
+<!-- =====================================================================
+     Outbound links are marked data-cta. Each cover points at its own Amazon
+     product page; the hero and footer buttons point at the author store.
+     ===================================================================== -->
+
+<header class="wrap hero">
+  <p class="label">Japanese Philosophy for Inner Peace</p>
+  <h1>Takagi Myakano</h1>
+  <p>Ancient Japanese wisdom, made practical for modern life.</p>
+  <a class="btn" data-cta="hero" href="https://www.amazon.com/stores/Takagi-Myakano/author/B0GLZFG89K?ref=ap_rdr&amp;shoppingPortalEnabled=true&amp;ccs_id=c7dcc5d7-bfad-40f6-aceb-56969d80b4c9" target="_blank" rel="noopener">See the books on Amazon</a>
+</header>
+
+<div class="wrap"><div class="rule"></div></div>
+
+<section class="wrap prose">
+  <h2 class="label">About the work</h2>
+  <div class="prose-body">
+    <p class="prose-lead">Takagi Myakano is the author behind <em>Japanese Philosophy for Inner Peace</em>, a series of short, practical books about living with more attention and less noise.</p>
+    <p>Each book takes a single Japanese concept — ikigai, wabi-sabi, kintsugi, kaizen — and carries it from philosophy into practice: what it means, why it has lasted, and what to do with it on an ordinary Tuesday. The aim is plain guidance you can act on the same day you read it.</p>
+    <p>The thread running through all four is the same. A calmer, more meaningful life is not built by a single decision but by small, repeatable ones: finding a reason to get up, accepting what is imperfect, mending what has broken, and improving by degrees. The series exists to make those ideas usable, and to keep them short enough to finish.</p>
   </div>
-  <div class="rating" role="img" aria-label="4.9 out of 5 stars on Amazon">
-    <span class="stars" aria-hidden="true"><span style="width:98.0%"></span></span>
-    <p class="rating-text">4.9 stars on Amazon</p>
+</section>
+
+<div class="wrap"><div class="rule"></div></div>
+
+<section class="wrap prose">
+  <h2 class="label">The author</h2>
+  <div class="prose-body">
+    <p class="prose-lead">Takagi Myakano did not set out to become an author. He set out to understand a single question: what makes a life feel whole?</p>
+    <p>For years, he immersed himself in the quiet corners of Japanese thought — sitting with the idea of ikigai, a reason for being; studying wabi-sabi, the beauty found in imperfection; tracing the gold seams of kintsugi, where breaking becomes a kind of repair; and practicing kaizen, the discipline of small, steady change. He read what the philosophers wrote, then set the books aside and tried to live what they meant.</p>
+    <p>Somewhere along the way, students began coming to him instead. Some call him a teacher. A few, only half-joking, call him a master. Takagi shrugs off both. He still thinks of himself as a student who never quite finishes learning.</p>
+    <p>His books are an attempt to pass along what took him years to learn, in plain language, for anyone ready to begin.</p>
   </div>
-  <a class="go" data-amazon href="https://www.amazon.com/21-Principles-Dokkodo-Mastering-Self-Discipline/dp/B0H4LS25HL/">Continue to Amazon <span aria-hidden="true">→</span></a>
-  <p class="note">Takes you to the book on Amazon.com</p>
-  <figure class="cover">
-    <img src="../images/dokkodo.jpg" alt="The 21 Principles of Dokkodo by Motiversity Quotes — book cover" width="800" height="1244">
-  </figure>
-</main>
-</body>
-</html>
+</section>
+
+<div class="wrap"><div class="rule"></div></div>
+
+<section class="wrap wrap--wide books" id="books">
+  <h2 class="label">The Books</h2>
+
+  <div class="book-grid">
+
+    <article class="book">
+      <a class="book-cover" data-cta="ikigai" href="https://www.amazon.com/IKIGAI-Discover-Japanese-Philosophy-Happiness/dp/B0H4LHJZPG/" target="_blank" rel="noopener">
+        <img src="ikigai-en.jpg" alt="IKIGAI by Takagi Myakano — book cover" width="800" height="1245" loading="lazy">
+      </a>
+      <div class="book-meta">
+        <h3>Ikigai</h3>
+        <p>The flagship title: a method for finding meaning, happiness and harmony in daily life.</p>
+        <ul class="chips">
+          <li>English</li><li>Spanish</li><li>French</li><li>German</li>
+          <li>Italian</li><li>Dutch</li><li>Swedish</li><li>Polish</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="book">
+      <a class="book-cover" data-cta="wabi-sabi" href="https://www.amazon.com/Wabi-Sabi-Mindfulness-Stress-Free-Philosophy-ebook/dp/B0FVNMMS9D?ref_=saga_ast_ss_dsk_dp" target="_blank" rel="noopener">
+        <img src="wabi-sabi.jpg" alt="Wabi Sabi by Takagi Myakano — book cover" width="800" height="1236" loading="lazy">
+      </a>
+      <div class="book-meta">
+        <h3>Wabi Sabi</h3>
+        <p>The perfectly imperfect path to mindfulness, through simple daily practices.</p>
+        <ul class="chips"><li>English</li><li>Italian</li></ul>
+        <p class="bestseller">Amazon Best Seller</p>
+      </div>
+    </article>
+
+    <article class="book">
+      <a class="book-cover" data-cta="kintsugi" href="https://www.amazon.com/Kintsugi-Repairing-Practices-Self-Acceptance-Philosophy-ebook/dp/B0GNT7WZGG?ref_=saga_ast_ss_dsk_dp" target="_blank" rel="noopener">
+        <img src="kintsugi.jpg" alt="Kintsugi by Takagi Myakano — book cover" width="800" height="1236" loading="lazy">
+      </a>
+      <div class="book-meta">
+        <h3>Kintsugi</h3>
+        <p>Repairing a life with daily practices, stories and exercises for strength and self-acceptance.</p>
+        <ul class="chips"><li>English</li></ul>
+      </div>
+    </article>
+
+    <article class="book">
+      <a class="book-cover" data-cta="kaizen" href="https://www.amazon.ca/KAIZEN-Desbloquea-Verdadero-Potencial-Excelencia-ebook/dp/B0CNTMSLZW?ref_=ast_author_dp&amp;th=1&amp;psc=1" target="_blank" rel="noopener">
+        <img src="kaizen.jpg" alt="KAIZEN by Takagi Myakano — book cover" width="800" height="1279" loading="lazy">
+      </a>
+      <div class="book-meta">
+        <h3>Kaizen</h3>
+        <p>Gradual Japanese change: small improvements that compound into excellence.</p>
+        <ul class="chips"><li>Spanish</li><li>Italian</li></ul>
+      </div>
+    </article>
+
+  </div>
+
+  <p class="series-note">The series appears as <em>Filosofía Japonesa Para la Paz Interior</em> in Spanish and <em>filosofia giapponese per la pace interiore</em> in Italian.</p>
+</section>
+
+
+<section class="wrap proof">
+  <div class="proof-inner">
+    <p>These books have sold more than 35,000 copies combined across editions worldwide.</p>
+  </div>
+</section>
+
+<footer class="wrap">
+  <a class="btn" data-cta="footer" href="https://www.amazon.com/stores/Takagi-Myakano/author/B0GLZFG89K?ref=ap_rdr&amp;shoppingPortalEnabled=true&amp;ccs_id=c7dcc5d7-bfad-40f6-aceb-56969d80b4c9" target="_blank" rel="noopener">Find Takagi Myakano on Amazon</a>
+</footer>
+
+<!-- Structured data: helps Google connect the name to the body of work.
+     Replace the URLs marked REPLACE before launch. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Takagi Myakano",
+  "jobTitle": "Author",
+  "description": "Author of Japanese Philosophy for Inner Peace, a series of short, practical books on ikigai, wabi-sabi, kintsugi and kaizen.",
+  "sameAs": ["https://www.amazon.com/stores/Takagi-Myakano/author/B0GLZFG89K"]
+}
+</script>
+
+
+
+</body></html>
