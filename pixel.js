@@ -1,7 +1,7 @@
 /* Meta Pixel for the bridge pages.
-   Pixel ID is set below. Each page fires PageView + ViewContent on load, and a custom
-      "AmazonClick" event when the visitor taps the Amazon button.
-      In Events Manager you can turn AmazonClick into a custom conversion. */
+   Pixel ID is set below. Each page fires PageView + ViewContent on load.
+   Tapping the Amazon button fires the standard InitiateCheckout event
+   (selectable as an ad conversion event) plus a custom "AmazonClick". */
 (function () {
   var META_PIXEL_ID = '1477863464188683';
 
@@ -23,6 +23,7 @@
     var a = e.target.closest && e.target.closest('a[data-amazon]');
     if (!a) return;
     e.preventDefault();
+    fbq('track', 'InitiateCheckout', { content_name: book, content_category: 'Book' });
     fbq('trackCustom', 'AmazonClick', { content_name: book });
     // Short pause so the event is sent before the browser leaves the page.
     setTimeout(function () { window.location.href = a.href; }, 250);
