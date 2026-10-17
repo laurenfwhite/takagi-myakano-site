@@ -3,7 +3,7 @@
       "AmazonClick" event when the visitor taps the Amazon button.
       In Events Manager you can turn AmazonClick into a custom conversion. */
 (function () {
-  var META_PIXEL_ID = '2536847540116822';
+  var META_PIXEL_ID = '1477863464188683';
 
   var tag = document.currentScript;
   var book = (tag && tag.getAttribute('data-book')) || document.title;
